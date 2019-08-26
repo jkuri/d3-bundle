@@ -1,7 +1,11 @@
-image: abstruse
+image: ubuntu_19_04_nvm:latest
 
 matrix:
   - env: SCRIPT=test NODE_VERSION=8
+  - env: SCRIPT=test NODE_VERSION=9
+  - env: SCRIPT=test NODE_VERSION=10
+  - env: SCRIPT=test NODE_VERSION=11
+  - env: SCRIPT=test NODE_VERSION=12
 
 before_install:
   - nvm install $NODE_VERSION
