@@ -1,4 +1,4 @@
-image: abstruse
+image: ubuntu_19_04_nvm
 
 matrix:
   - env: SCRIPT=test NODE_VERSION=8
