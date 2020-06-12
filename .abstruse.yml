@@ -1,7 +1,10 @@
-image: ubuntu_19_04_nvm
+image: ubuntu_nvm
 
 matrix:
   - env: SCRIPT=test NODE_VERSION=8
+  - env: SCRIPT=test NODE_VERSION=10
+  - env: SCRIPT=test NODE_VERSION=12
+  - env: SCRIPT=test NODE_VERSION=14
 
 before_install:
   - nvm install $NODE_VERSION
